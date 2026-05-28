@@ -1,0 +1,63 @@
+/* ====================================
+   TERMINAL BOOT STYLE
+==================================== */
+
+body {
+    margin: 0;
+    background: black;
+    color: #c8c8c8;
+    font-family: monospace;
+    overflow: hidden;
+}
+
+/* container boot */
+
+#boot-screen {
+    position: fixed;
+    inset: 0;
+    padding: 20px;
+    font-size: 14px;
+    line-height: 1.4;
+    white-space: pre-wrap;
+}
+
+/* testo terminale */
+
+#terminal-text {
+    display: flex;
+    flex-direction: column;
+}
+
+/* ------------------------------------
+   BLACK SCREEN TRANSITION
+------------------------------------ */
+
+#black-screen {
+    position: fixed;
+    inset: 0;
+    background: black;
+    z-index: 9999;
+}
+
+/* ------------------------------------
+   GLITCH FLASH OVERLAY
+------------------------------------ */
+
+#glitch-screen {
+    position: fixed;
+    inset: 0;
+    background: black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 40px;
+    font-weight: bold;
+    font-family: monospace;
+    color: white;
+
+    z-index: 10000;
+
+    will-change: transform, opacity, filter;
+}
